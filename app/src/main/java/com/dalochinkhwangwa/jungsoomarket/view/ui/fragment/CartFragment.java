@@ -56,7 +56,11 @@ public class CartFragment extends Fragment implements CartItemAdapter.CartDelega
     }
 
     private void updateCartRecyclerView(List<CartItem> cartItems) {
-        emptyTextView.setVisibility(View.GONE);
+        if (cartItems.isEmpty())
+            emptyTextView.setVisibility(View.VISIBLE);
+        else
+            emptyTextView.setVisibility(View.GONE);
+
         cartItemAdapter.updateCartItems(cartItems);
     }
 
