@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.HomeActivity"
+    android:id="@+id/parent_layout">
+
+    <ImageView
+        android:id="@+id/app_logo_imageview"
+        android:layout_width="@dimen/dimen_56dp"
+        android:layout_height="@dimen/dimen_56dp"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:src="@drawable/ic_cart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/scan_imageview"
+        android:layout_width="@dimen/dimen_48dp"
+        android:layout_height="@dimen/dimen_48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:src="@drawable/ic_scan"
+        app:layout_constraintBottom_toTopOf="@id/home_viewpager"/>
+
+    <TextView
+        android:id="@+id/app_logo"
+        style="@style/AppLogo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/jungsoo_market"
+        app:layout_constraintBottom_toBottomOf="@+id/app_logo_imageview"
+        app:layout_constraintEnd_toStartOf="@+id/scan_imageview"
+        app:layout_constraintStart_toEndOf="@id/app_logo_imageview"
+        app:layout_constraintTop_toTopOf="@+id/app_logo_imageview" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toTopOf="@id/home_bottomnavigationview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_logo_imageview" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/home_bottomnavigationview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/home_menu"
+        app:itemIconTint="@drawable/menu_color_bg"
+        app:itemTextColor="@drawable/menu_color_bg"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

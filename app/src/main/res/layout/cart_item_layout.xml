@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dimen_8dp"
+    android:layout_marginTop="@dimen/dimen_8dp"
+    app:cardCornerRadius="@dimen/dimen_16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cart_product_imageview"
+            android:layout_width="@dimen/dimen_104dp"
+            android:layout_height="@dimen/dimen_104dp"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:background="@drawable/circle_background"
+            android:padding="@dimen/dimen_8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/cart_product_name_textview"
+            style="@style/ProductName"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cart_product_imageview"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Banana" />
+
+        <TextView
+            android:id="@+id/cart_product_price_textview"
+            style="@style/ProductPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cart_product_imageview"
+            app:layout_constraintTop_toBottomOf="@id/cart_remove_imageview"
+            tools:text="$1.00" />
+
+
+        <ImageView
+            android:id="@+id/cart_remove_imageview"
+            android:layout_width="@dimen/dimen_56dp"
+            android:layout_height="@dimen/dimen_56dp"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:padding="@dimen/dimen_16dp"
+            android:src="@drawable/ic_remove"
+            app:layout_constraintBottom_toBottomOf="@+id/item_count_textview"
+            app:layout_constraintEnd_toStartOf="@id/item_count_textview"
+            app:layout_constraintTop_toTopOf="@+id/item_count_textview" />
+
+        <TextView
+            android:id="@+id/item_count_textview"
+            style="@style/ProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toTopOf="@id/cart_product_price_textview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cart_product_imageview"
+            app:layout_constraintTop_toBottomOf="@+id/cart_product_name_textview"
+            tools:text="x2" />
+
+        <ImageView
+            android:id="@+id/cart_add_imageview"
+            android:layout_width="@dimen/dimen_56dp"
+            android:layout_height="@dimen/dimen_56dp"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:padding="@dimen/dimen_16dp"
+            android:src="@drawable/ic_add"
+            app:layout_constraintStart_toEndOf="@id/item_count_textview"
+            app:layout_constraintBottom_toBottomOf="@+id/item_count_textview"
+            app:layout_constraintTop_toTopOf="@+id/item_count_textview" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

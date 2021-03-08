@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Jungsoo Market DaloChinkhwangwa</string>
+    <string name="jungsoo_market">Jungsoo Market</string>
+    <string name="shop_text">Shop</string>
+    <string name="cart_text">Cart</string>
+    <string name="item_added_text">%s added to cart!</string>
+    <string name="shopping_cart_text">Shopping Cart</string>
+    <string name="price">$%,.2f</string>
+    <string name="total_cost_text">Total: $%,.2f</string>
+    <string name="item_count">x%d</string>
+    <string name="scan_qrcode">Scan QRCode</string>
+    <string name="cart_is_empty">Cart is empty..</string>
+</resources>

@@ -1,0 +1,29 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/coolGreen</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppLogo">
+        <item name="android:fontFamily">@font/josefin_sans</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ProductName">
+        <item name="android:fontFamily">@font/akaya_telivigala_regular</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ProductPrice">
+        <item name="android:fontFamily">@font/rocknroll</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/coolGreen</item>
+    </style>
+
+</resources>
