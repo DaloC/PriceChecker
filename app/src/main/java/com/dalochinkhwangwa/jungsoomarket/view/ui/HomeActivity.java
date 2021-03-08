@@ -112,7 +112,6 @@ public class HomeActivity extends AppCompatActivity {
             } else {
                 logDebug("Scanned: " + result.getContents());
                 viewModel.scannedItem(result.getContents());
-                Toast.makeText(this, "Scanned: " + result.getContents(), Toast.LENGTH_LONG).show();
             }
         } else {
             super.onActivityResult(requestCode, resultCode, data);
